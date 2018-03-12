@@ -1,0 +1,1 @@
+int SoNgayTrongThang(int thang, int nam);

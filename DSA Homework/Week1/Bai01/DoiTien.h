@@ -1,0 +1,1 @@
+void DoiTien(int n);
