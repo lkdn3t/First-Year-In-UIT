@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	system("cls");
-	cout << "...TIME UP...\n";
+	cout << "...TIME'S UP...\n";
 	system("pause");
 	return 0;
 }
