@@ -42,7 +42,7 @@ void TestCandidate::putListPassCdd() {
     cout << "\n[DANH SACH THI SINH CO TONG DIEM LON HON 15]\n";
     int count = 0;
     for (int i = 0; i < NumCdd; ++i) {
-        float SumScore = ListCdd[i].getMathScore() + ListCdd[i].getLiterScore() + ListCdd[i].getLiterScore();
+        float SumScore = ListCdd[i].getMathScore() + ListCdd[i].getLiterScore() + ListCdd[i].getEngScore();
         if (SumScore > 15) {
             cout << "\n...Thi sinh thu " << ++count << "...\n";
             ListCdd[i].putCandidate();
