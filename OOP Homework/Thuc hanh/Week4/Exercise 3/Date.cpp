@@ -124,9 +124,11 @@ int Date::DiffDays(const Date& date) const {
         if (date1.year > date2.year)
             swap(date1, date2);
         
+        if (date2.month > 2 && date2.isLeapYear())
+            date2.day++;
         while (date2.year > date1.year) {
             date2.year--;
-            date2.day += date2.DayOfYear() - (date1.month > 2);
+            date2.day += date2.DayOfYear();
         }
         return date1.DiffDays(date2);
     }
