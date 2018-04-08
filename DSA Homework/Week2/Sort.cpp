@@ -164,20 +164,21 @@ void Merge(int *a, int left, int mid, int right) {
 	int *R = new int[n2];
 
 	//Đưa nửa mảng bên trái a vào L, nửa mảng bên phải a và R
-	for (int i = left, k = 0; k < n1; ++i, ++k)		L[k] = a[i];
+	for (int i = left, k = 0; k < n1; ++i, ++k)	L[k] = a[i];
 	for (int i = mid + 1, k = 0; k < n2; ++i, ++k)	R[k] = a[i];
 
 	//Thay nửa mảng trái của a bằng các phần tử nhỏ hơn của từng mảng L, R
 	//Thay nửa mảng phải của a bằng các phần tử lớn hơn của từng mảng L, R
 	int i = 0, j = 0, k = left;
-	while (i < n1 && j < n2)
+	while (i < n1 && j < n2) {
 		if (L[i] <= R[j]) a[k++] = L[i++];
 		else a[k++] = R[j++];
-
-		//Nếu một trong hai mảng bị hết phần tử thì đưa các phần tử còn lại vào mảng a
-		while (i < n1) a[k++] = L[i++];
-		while (j < n2) a[k++] = R[j++];
-		delete[]L, R;
+	}
+		
+	//Nếu một trong hai mảng bị hết phần tử thì đưa các phần tử còn lại vào mảng a
+	while (i < n1) a[k++] = L[i++];
+	while (j < n2) a[k++] = R[j++];
+	delete[]L, R;
 }
 
 //Hàm MergeSort
