@@ -10,14 +10,14 @@ public class Bird : MonoBehaviour
     private Animator anim;
 
     //Bắt đầu game: set xác định vị trí và chim
-	void Start ()
+    void Start()
     {
         rgbd = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-	}
-	
-	// Update được gọi liên tục theo từng frame để cập nhật trạng thái
-	void Update ()
+    }
+
+    // Update được gọi liên tục theo từng frame để cập nhật trạng thái
+    void Update()
     {
         //Khi chim chưa chết
         if (!isDead)
@@ -29,7 +29,7 @@ public class Bird : MonoBehaviour
                 rgbd.AddForce(new Vector2(0, UpForce));
                 anim.SetTrigger("Flap");
             }
-        }	
+        }
     }
 
     //Khi va chạm vào vật thể: set chim đứng yên và đặt chim chết

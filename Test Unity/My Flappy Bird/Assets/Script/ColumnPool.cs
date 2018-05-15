@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColumnPool : MonoBehaviour {
+public class ColumnPool : MonoBehaviour
+{
     public int NumberOfColumns = 5;
     public GameObject ColumnPrefab;
     public float SpawnRate = 4f;
@@ -15,17 +16,19 @@ public class ColumnPool : MonoBehaviour {
     private float SpawnXPosition = 10f;
     private int CurrentColumn = 0;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         Columns = new GameObject[NumberOfColumns];
-        for (int i = 0; i < NumberOfColumns; i++) 
+        for (int i = 0; i < NumberOfColumns; i++)
         {
             Columns[i] = (GameObject)Instantiate(ColumnPrefab, PoolPosition, Quaternion.identity);
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         TimeSinceLastSpawned += Time.deltaTime;
 
         if (!GameControl.instance.GameOver && TimeSinceLastSpawned >= SpawnRate)
@@ -40,5 +43,5 @@ public class ColumnPool : MonoBehaviour {
                 CurrentColumn = 0;
             }
         }
-	}
+    }
 }
