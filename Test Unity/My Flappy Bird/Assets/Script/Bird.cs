@@ -30,7 +30,7 @@ public class Bird : MonoBehaviour
                 anim.SetTrigger("Flap");
             }
         }	
-	}
+    }
 
     //Khi va chạm vào vật thể: set chim đứng yên và đặt chim chết
     void OnCollisionEnter2D()
