@@ -29,8 +29,7 @@ public class GameControl : MonoBehaviour
         }
     }
 
-    //Cập nhật lại frame: nếu GameOver thì hiển thị các Screen bị ẩn
-    //cụ thể là scene báo GameOver
+    //Cập nhật lại frame: nếu GameOver và người chơi muốn chơi lại thì tải lại Scene
     void Update()
     {
         if (GameOver && Input.GetMouseButtonDown(0))
