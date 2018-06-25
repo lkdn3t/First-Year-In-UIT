@@ -9,9 +9,6 @@ namespace ConsoleApp1
 {
     class AnalyzeFunction
     {
-        public float _k1 { get; set; }
-        public float _k2 { get; set; }
-        public float _k3 { get; set; }
         public float _min { get; set; }
         public float _max { get; set; }
         public float _step { get; set; }
