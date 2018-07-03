@@ -1,0 +1,10 @@
+C:\Users\PC\source\repos\Math Quiz\Math Quiz\bin\Debug\Math Quiz.exe.config
+C:\Users\PC\source\repos\Math Quiz\Math Quiz\bin\Debug\Math Quiz.exe
+C:\Users\PC\source\repos\Math Quiz\Math Quiz\bin\Debug\Math Quiz.pdb
+C:\Users\PC\source\repos\Math Quiz\Math Quiz\obj\Debug\Math Quiz.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\Math Quiz\Math Quiz\obj\Debug\Math_Quiz.Properties.Resources.resources
+C:\Users\PC\source\repos\Math Quiz\Math Quiz\obj\Debug\Math Quiz.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\Math Quiz\Math Quiz\obj\Debug\Math Quiz.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Math Quiz\Math Quiz\obj\Debug\Math Quiz.exe
+C:\Users\PC\source\repos\Math Quiz\Math Quiz\obj\Debug\Math Quiz.pdb
+C:\Users\PC\source\repos\Math Quiz\Math Quiz\obj\Debug\Math_Quiz.MathQuizForm.resources
